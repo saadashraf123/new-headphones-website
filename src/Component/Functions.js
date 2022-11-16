@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { urlFor, client } from '../client';
+import list from '../db.json';
+import axios from 'axios'
 
 
 const Functions = () => {
@@ -8,17 +9,18 @@ const Functions = () => {
     const [footerBanner, setFooterBanner] = useState({})
 
     useEffect(() => {
-        const query = '*[_type == "banner"]';
-        client.fetch(query)
+        axios.get(list.banner)
             .then((data) => {
                 setBanner(data[0])
                 setFooterBanner(data[1])
             }
             )
 
-        const query1 = '*[_type == "product"]';
-        client.fetch(query1)
-            .then((data) => setProducts(data))
+        axios.get(list.product)
+            .then((data) => {
+                setProducts(data)
+            }
+            )
     }, [])
     return [products, banner, footerBanner]
 }

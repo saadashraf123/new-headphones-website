@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import Functions from './Functions'
-import { urlFor } from '../client';
-
 
 const Items = ({ products }) => {
     return (
         <div className='products-container'>
             {products?.map((data, index) =>
-                <Link to={`/productDetails/${data.name}`} state={{ product: data.name }}>
-                    <div key={data._id} className="product-card">
+                <Link to={`/productDetails/${data.name}`} state={{ product: data }}>
+                    <div key={data.id} className="product-card">
                         <img
-                            src={urlFor(data.image && data.image[0])}
+                            src={require(`../assets/${data.image[0]}`) && require(`../assets/${data.image[0]}`)}
                             width={250}
                             height={250}
                             className="product-image"

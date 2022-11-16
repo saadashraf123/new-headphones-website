@@ -1,12 +1,11 @@
 import React from 'react';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineShopping } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
 import { Link } from 'react-router-dom'
 import { useStateContext } from './StateContext';
-import { urlFor } from '../client';
 
 const Checkout = () => {
-    const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();
+    const { totalPrice, cartItems, setShowCart, onRemove } = useStateContext();
 
     return (
         <div className='row'>
@@ -30,7 +29,7 @@ const Checkout = () => {
                 <div className="product-container">
                     {cartItems.length >= 1 && cartItems.map((item) => (
                         <div className="product" key={item._id}>
-                            <img src={urlFor(item?.image[0])} className="cart-product-image" />
+                            <img src={require(`../assets/${item.image[0]}`)} className="cart-product-image" />
                             <div className="item-desc">
                                 <div className="flex top">
                                     <h5>{item.name}</h5>

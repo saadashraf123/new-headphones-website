@@ -5,12 +5,12 @@ import HeroBanner from './HeroBanner';
 import FooterBanner from './FooterBanner';
 import { Route, Routes } from 'react-router-dom';
 import ProductDetails from './ProductDetails'
-import Functions from './Functions';
+import data from '../db.json';
 import Success from './Success';
 import Checkout from './Checkout';
 
 const Layout = () => {
-    const [products, heroBanner] = Functions();
+    const products = data.product;
     return (
         <div className='layout'>
             <Routes>

@@ -1,31 +1,19 @@
 import React, { useState, useEffect } from 'react'
-import { client, urlFor } from '../client';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { useLocation } from 'react-router-dom';
-import Functions from "./Functions";
 import Items from './Items';
 import { useStateContext } from './StateContext'
 import { Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import array from '../db.json';
+
 
 const ProductDetails = () => {
-    const [products] = Functions();
     const location = useLocation();
-    const product = location.state.product;
-    const [data, setData] = useState([])
+    const data = location.state.product;
     const [index, setIndex] = useState(0);
-
-    const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
-
-
-    useEffect(() => {
-        const query = `*[_type == "product" && name == '${product}'][0]`
-        client.fetch(query)
-            .then((data) => {
-                setData(data)
-            }
-            )
-    }, [product])
+    const products = array.product;
+    const { decQty, incQty, qty, onAdd } = useStateContext();
 
     return (
         <>
@@ -35,13 +23,13 @@ const ProductDetails = () => {
                     <div className="product-detail-container">
                         <div>
                             <div className="image-container">
-                                <img src={data.image ? urlFor(data.image && data.image[index]) : ""} className="product-detail-image" />
+                                <img src={require(`../assets/${data.image[0]}`) && require(`../assets/${data.image[index]}`)} className="product-detail-image" />
                             </div>
                             <div className="small-images-container">
                                 {data.image?.map((item, i) => (
                                     <img
                                         key={i}
-                                        src={urlFor(item)}
+                                        src={require(`../assets/${item}`)}
                                         className={i === index ? 'small-image selected-image' : 'small-image'}
                                         onMouseEnter={() => setIndex(i)}
                                     />

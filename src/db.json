@@ -1,0 +1,136 @@
+{
+    "banner": [
+        {
+            "id": 1,
+            "name": "Headphones",
+            "smallText": "Hot Deals",
+            "midText": "Hero Headphones",
+            "largeText1": "50% off",
+            "largeText2": "Banner",
+            "product": "Headphones",
+            "buttonText": "Shop Now",
+            "saleTime": "Best Deals",
+            "details": "This is Hero Headphones",
+            "discount": "50%",
+            "image": [
+                "heroBanner.webp"
+            ],
+            "price": 999
+        },
+        {
+            "id": 2,
+            "name": "Earphones",
+            "smallText": "Best Headphones",
+            "midText": "50% OFF",
+            "largeText1": "Hottest",
+            "largeText2": "Deal",
+            "product": "Earphones",
+            "buttonText": "Shop Now",
+            "saleTime": "Only For $499",
+            "details": "Limited Time Offer",
+            "discount": "",
+            "image": [
+                "footerBanner.webp"
+            ],
+            "price": 499
+        }
+    ],
+    "product": [
+        {
+            "id": 3,
+            "name": "Earphones",
+            "image": [
+                "earphones_a_1.webp",
+                "earphones_a_2.webp",
+                "earphones_a_3.webp",
+                "earphones_a_4.webp"
+            ],
+            "details": "This is earphones",
+            "price": 99
+        },
+        {
+            "id": 4,
+            "name": "Ear Buds",
+            "image": [
+                "earphones_b_1.webp",
+                "earphones_b_2.webp",
+                "earphones_b_3.webp",
+                "earphones_b_4.webp"
+            ],
+            "details": "This is earphones",
+            "price": 99
+        },
+        {
+            "id": 5,
+            "name": "Wireless Earphones",
+            "image": [
+                "earphones_c_1.webp",
+                "earphones_c_2.webp",
+                "earphones_c_3.webp",
+                "earphones_c_4.webp"
+            ],
+            "details": "This is earphones",
+            "price": 99
+        },
+        {
+            "id": 6,
+            "name": "Speaker",
+            "image": [
+                "speaker1.webp",
+                "speaker2.webp",
+                "speaker3.webp",
+                "speaker4.webp"
+            ],
+            "details": "This is Speaker",
+            "price": 399
+        },
+        {
+            "id": 7,
+            "name": "Beats Headphones",
+            "image": [
+                "headphones_a_1.webp",
+                "headphones_a_2.webp",
+                "headphones_a_3.webp",
+                "headphones_a_4.webp"
+            ],
+            "details": "This is Beats Headphones",
+            "price": 199
+        },
+        {
+            "id": 8,
+            "name": "Headphones",
+            "image": [
+                "headphones_b_1.webp",
+                "headphones_b_2.webp",
+                "headphones_b_3.webp",
+                "headphones_b_4.webp"
+            ],
+            "details": "This is Headphones",
+            "price": 199
+        },
+        {
+            "id": 9,
+            "name": "Basic Headphones",
+            "image": [
+                "headphones_c_1.webp",
+                "headphones_c_2.webp",
+                "headphones_c_3.webp",
+                "headphones_c_4.webp"
+            ],
+            "details": "This is Basic Headphones",
+            "price": 199
+        },
+        {
+            "id": 9,
+            "name": "Smart Watch",
+            "image": [
+                "watch_1.webp",
+                "watch_2.webp",
+                "watch_3.webp",
+                "watch_4.webp"
+            ],
+            "details": "This is Smart Watch",
+            "price": 249
+        }
+    ]
+}

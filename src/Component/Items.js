@@ -5,7 +5,7 @@ const Items = ({ products }) => {
     return (
         <div className='products-container'>
             {products?.map((data, index) =>
-                <Link to={`/productDetails/${data.name}`} state={{ product: data }}>
+                <Link to={`/new-headphones-website/productDetails/${data.name}`} state={{ product: data }}>
                     <div key={data.id} className="product-card">
                         <img
                             src={require(`../assets/${data.image[0]}`) && require(`../assets/${data.image[0]}`)}

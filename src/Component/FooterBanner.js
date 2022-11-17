@@ -18,7 +18,7 @@ const FooterBanner = () => {
                     <p>{banner.smallText}</p>
                     <h3>{banner.midText}</h3>
                     <p>{banner.details}</p>
-                    <Link to={`/productDetails/${banner.name}`} state={{ product: banner }}>
+                    <Link to={`/new-headphones-website/productDetails/${banner.name}`} state={{ product: banner }}>
                         <button type="button">{banner.buttonText}</button>
                     </Link>
                 </div>

@@ -1,11 +1,17 @@
 import React from 'react';
 import { AiOutlineShopping } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useStateContext } from './StateContext';
 
 const Checkout = () => {
     const { totalPrice, cartItems, setShowCart, onRemove } = useStateContext();
+
+    const navigate = useNavigate();
+    const handleSubmit = event => {
+        event.preventDefault();
+        navigate('/new-headphones-website/success');
+    };
 
     return (
         <div className='row'>
@@ -64,7 +70,7 @@ const Checkout = () => {
             </div>
             <div className="checkout-form col-lg-5 col-md-10">
                 {cartItems.length >= 1 &&
-                    <form action='/success'>
+                    <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label>Email address</label>
                             <input type="email" className="form-control" placeholder="Enter email" required />
@@ -84,9 +90,12 @@ const Checkout = () => {
                         </div>
 
                         <div className="btn-container">
+
+                            {/* <Link to='/new-headphones-website/success'> */}
                             <button type="submit" className="btn">
                                 Pay Now
                             </button>
+                            {/* </Link> */}
                         </div>
                     </form>
                 }

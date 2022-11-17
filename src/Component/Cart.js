@@ -74,7 +74,7 @@ const Cart = () => {
                         </div>
 
                         <div className="btn-container">
-                            <Link to='/checkOut'>
+                            <Link to='/new-headphones-website/checkOut'>
                                 <button type="button" className="btn buy-now" onClick={() => setShowCart(false)} >
                                     Buy Now
                                 </button>

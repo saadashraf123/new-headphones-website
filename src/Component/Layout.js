@@ -27,9 +27,9 @@ const Layout = () => {
                         <FooterBanner />
                     </>
                 } />
-                <Route path='/productDetails/*' element={<ProductDetails />} />
-                <Route path='/checkOut' element={<Checkout />} />
-                <Route path='/success' element={<Success />} />
+                <Route path='/new-headphones-website/productDetails/*' element={<ProductDetails />} />
+                <Route path='/new-headphones-website/checkOut' element={<Checkout />} />
+                <Route path='/new-headphones-website/success' element={<Success />} />
             </Routes>
             <Footer />
         </div>

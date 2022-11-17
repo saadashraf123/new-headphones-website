@@ -14,7 +14,7 @@ const HeroBanner = () => {
                         <h1>{banner.largeText1}</h1>
                         <img src={require(`../assets/${banner.image}`)} alt="headphones" className="hero-banner-image" />
                         <div>
-                            <Link to={`/productDetails/${banner.name}`} state={{ product: banner }} >
+                            <Link to={`/new-headphones-website/productDetails/${banner.name}`} state={{ product: banner }} >
                                 <button type="button">{banner.buttonText}</button>
                             </Link>
 

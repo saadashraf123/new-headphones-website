@@ -64,7 +64,7 @@ const ProductDetails = () => {
                             </div>
                             <div className="buttons">
                                 <button type="button" className="add-to-cart" onClick={() => onAdd(data, qty)}>Add to Cart</button>
-                                <Link to='/checkOut'>
+                                <Link to='/new-headphones-website/checkOut'>
                                     <button type="button" className="btn buy-now" onClick={() => onAdd(data, qty)} >
                                         Buy Now
                                     </button>

@@ -3,7 +3,6 @@ import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 
 import { TiDeleteOutline } from 'react-icons/ti';
 import { Link } from 'react-router-dom'
 import { useStateContext } from './StateContext';
-import { urlFor } from '../client';
 
 const Cart = () => {
     const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } = useStateContext();

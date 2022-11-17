@@ -27,7 +27,7 @@ const Success = () => {
                         order@example.com
                     </a>
                 </p>
-                <Link to="/">
+                <Link to="/new-headphones-website">
                     <button type="button" width="300px" className="btn">
                         Continue Shopping
                     </button>

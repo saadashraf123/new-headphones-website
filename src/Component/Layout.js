@@ -14,7 +14,7 @@ const Layout = () => {
     return (
         <div className='layout'>
             <Routes>
-                <Route path='/' element={
+                <Route path='/new-headphones-website' element={
                     <>
                         <HeroBanner />
                         <div className='products-heading'>

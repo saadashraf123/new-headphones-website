@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-headphones-website/static/css/main.a47ec3bf.css",
-    "main.js": "/new-headphones-website/static/js/main.4d049812.js",
+    "main.js": "/new-headphones-website/static/js/main.ed275789.js",
     "static/media/watch_4.webp": "/new-headphones-website/static/media/watch_4.2dabe001c40bee953a72.webp",
     "static/media/speaker2.webp": "/new-headphones-website/static/media/speaker2.fa84f9ef9fd29622ca40.webp",
     "static/media/earphones_c_4.webp": "/new-headphones-website/static/media/earphones_c_4.58049bdbec3feb0ae353.webp",
@@ -37,10 +37,10 @@
     "static/media/headphones_c_2.webp": "/new-headphones-website/static/media/headphones_c_2.deddf8e0194f092159bc.webp",
     "index.html": "/new-headphones-website/index.html",
     "main.a47ec3bf.css.map": "/new-headphones-website/static/css/main.a47ec3bf.css.map",
-    "main.4d049812.js.map": "/new-headphones-website/static/js/main.4d049812.js.map"
+    "main.ed275789.js.map": "/new-headphones-website/static/js/main.ed275789.js.map"
   },
   "entrypoints": [
     "static/css/main.a47ec3bf.css",
-    "static/js/main.4d049812.js"
+    "static/js/main.ed275789.js"
   ]
 }
